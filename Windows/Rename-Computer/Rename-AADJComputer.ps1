@@ -1,11 +1,13 @@
 
 <#PSScriptInfo
 
-.VERSION 1.0
+.VERSION 1.1
 
 .GUID 3b42d8c8-cda5-4411-a623-90d812a8e29e
 
 .AUTHOR Michael Niehaus
+
+.Contributor Nick Benton
 
 .COMPANYNAME Microsoft
 
@@ -27,6 +29,7 @@
 
 .RELEASENOTES
 Version 1.0: Initial version.
+Version 1.1: Updated version.
 
 .PRIVATEDATA
 
@@ -42,7 +45,8 @@ Version 1.0: Initial version.
 Param()
 
 #Sets the variables for the customer
-$ComputerPrefix = "NB-"
+$ComputerPrefix = "PRE-" #prefix for computer name
+$wait = "3600" #sets the restart wait time in seconds 
 
 # If we are running as a 32-bit process on an x64 system, re-launch as a 64-bit process
 if ("$env:PROCESSOR_ARCHITEW6432" -ne "ARM64")
@@ -79,8 +83,9 @@ if ($goodToGo)
 
     $Serial = Get-WmiObject Win32_bios | Select-Object -ExpandProperty SerialNumber
     $newName = $ComputerPrefix + $Serial
-    $newName = $newName.Replace(" ","")
+    $newName = $newName.Replace(" ","") #Removes spaces
     
+    #shortens name
     if ($newName.Length -ge 15) {
         $newName = $newName.substring(0, 15)
     }
@@ -103,7 +108,7 @@ if ($goodToGo)
     }
     else {
         Write-Host "Initiating a restart in 60 minutes"
-        & shutdown.exe /g /t 3600 /f /c "Restarting the computer in 60 minutes due to a computer name change. Please save your work."
+        & shutdown.exe /g /t $wait /f /c "Restarting the computer in 60 minutes due to a computer name change. Please save your work."
         Stop-Transcript
         Exit 0
     }
