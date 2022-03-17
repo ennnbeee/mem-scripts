@@ -1,0 +1,12 @@
+{
+    "id":  "3b97c24b-34a1-4da4-ab99-1abe562d6d75",
+    "createdDateTime":  "2021-11-22T13:56:23.2565101Z",
+    "lastModifiedDateTime":  "2021-11-22T13:56:23.2565101Z",
+    "displayName":  "Filter_Windows_Devices_Virtual",
+    "description":  "",
+    "platform":  "windows10AndLater",
+    "rule":  "(device.model -startsWith \"Virtual\") or (device.model -startsWith \"VMware\")",
+    "roleScopeTags":  [
+                          "0"
+                      ]
+}

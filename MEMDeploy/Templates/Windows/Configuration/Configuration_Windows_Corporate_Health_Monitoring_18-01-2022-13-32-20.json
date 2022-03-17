@@ -1,0 +1,19 @@
+{
+    "@odata.type":  "#microsoft.graph.windowsHealthMonitoringConfiguration",
+    "id":  "76091275-2580-40f9-b6f8-0d70edf19548",
+    "lastModifiedDateTime":  "2021-11-26T15:23:28.0996939Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2021-02-10T09:52:59.3208796Z",
+    "description":  "",
+    "displayName":  "Configuration_Windows_Corporate_Health_Monitoring",
+    "version":  5,
+    "allowDeviceHealthMonitoring":  "enabled",
+    "configDeviceHealthMonitoringScope":  "bootPerformance,windowsUpdates",
+    "configDeviceHealthMonitoringCustomScope":  null
+}

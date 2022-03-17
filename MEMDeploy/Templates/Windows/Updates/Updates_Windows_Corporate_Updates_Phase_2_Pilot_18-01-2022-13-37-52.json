@@ -1,0 +1,69 @@
+{
+    "@odata.type":  "#microsoft.graph.windowsUpdateForBusinessConfiguration",
+    "id":  "7bffead9-7e86-42ae-add7-b2664c2781e5",
+    "lastModifiedDateTime":  "2021-11-30T15:48:01.5520516Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2021-11-22T15:17:27.0562529Z",
+    "description":  "",
+    "displayName":  "Updates_Windows_Corporate_Updates_Phase_2_Pilot",
+    "version":  4,
+    "deliveryOptimizationMode":  "userDefined",
+    "prereleaseFeatures":  "userDefined",
+    "automaticUpdateMode":  "autoInstallAtMaintenanceTime",
+    "microsoftUpdateServiceAllowed":  true,
+    "driversExcluded":  false,
+    "qualityUpdatesDeferralPeriodInDays":  3,
+    "featureUpdatesDeferralPeriodInDays":  30,
+    "qualityUpdatesPaused":  false,
+    "featureUpdatesPaused":  false,
+    "qualityUpdatesPauseExpiryDateTime":  "0001-01-01T00:00:00Z",
+    "featureUpdatesPauseExpiryDateTime":  "0001-01-01T00:00:00Z",
+    "businessReadyUpdatesOnly":  "userDefined",
+    "skipChecksBeforeRestart":  false,
+    "updateWeeks":  null,
+    "qualityUpdatesPauseStartDate":  null,
+    "featureUpdatesPauseStartDate":  null,
+    "featureUpdatesRollbackWindowInDays":  60,
+    "qualityUpdatesWillBeRolledBack":  false,
+    "featureUpdatesWillBeRolledBack":  false,
+    "qualityUpdatesRollbackStartDateTime":  "0001-01-01T00:00:00Z",
+    "featureUpdatesRollbackStartDateTime":  "0001-01-01T00:00:00Z",
+    "engagedRestartDeadlineInDays":  null,
+    "engagedRestartSnoozeScheduleInDays":  null,
+    "engagedRestartTransitionScheduleInDays":  null,
+    "deadlineForFeatureUpdatesInDays":  14,
+    "deadlineForQualityUpdatesInDays":  2,
+    "deadlineGracePeriodInDays":  1,
+    "postponeRebootUntilAfterDeadline":  true,
+    "autoRestartNotificationDismissal":  "notConfigured",
+    "scheduleRestartWarningInHours":  null,
+    "scheduleImminentRestartWarningInMinutes":  null,
+    "userPauseAccess":  "enabled",
+    "userWindowsUpdateScanAccess":  "enabled",
+    "updateNotificationLevel":  "restartWarningsOnly",
+    "allowWindows11Upgrade":  false,
+    "installationSchedule":  {
+                                 "@odata.type":  "#microsoft.graph.windowsUpdateActiveHoursInstall",
+                                 "activeHoursStart":  "14:00:00.0000000",
+                                 "activeHoursEnd":  "12:00:00.0000000"
+                             },
+    "groupAssignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations(\u00277bffead9-7e86-42ae-add7-b2664c2781e5\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/groupAssignments",
+    "groupAssignments":  [
+                             {
+                                 "id":  "7bffead9-7e86-42ae-add7-b2664c2781e5_0abd9480-b1cf-4c9d-b4b7-425532ab063a",
+                                 "targetGroupId":  "0abd9480-b1cf-4c9d-b4b7-425532ab063a",
+                                 "excludeGroup":  true
+                             },
+                             {
+                                 "id":  "7bffead9-7e86-42ae-add7-b2664c2781e5_a2b18c6c-e967-46da-9054-34dfbd6c0f36",
+                                 "targetGroupId":  "a2b18c6c-e967-46da-9054-34dfbd6c0f36",
+                                 "excludeGroup":  false
+                             }
+                         ]
+}

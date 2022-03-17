@@ -1,0 +1,8 @@
+﻿DisplayName,Description,GroupTypes,MembershipRule
+SG_MEM_Windows_Devices_Corporate,All Corporate Windows devices,DynamicMembership,"(device.deviceOSType -eq ""Windows"") and (device.deviceOwnership -eq ""Company"") and (device.managementType -eq ""MDM"") and (device.accountEnabled -eq True)"
+SG_MEM_Windows_Devices_Corporate_POC,POC Corporate Windows devices,,
+SG_MEM_Windows_Devices_Corporate_Autopilot,All Corporate Windows AutoPilot devices,DynamicMembership,"(device.devicePhysicalIds -any (_ -contains ""[ZTDId]""))"
+SG_MEM_Windows_Users,All users enabled for Windows,DynamicMembership,"(user.accountEnabled -eq True) and (user.assignedPlans -any (assignedPlan.servicePlanId -eq ""c1ec4a95-1f05-45b3-a911-aa3fa01094f5"" -and assignedPlan.capabilityStatus -eq ""Enabled""))"
+SG_MEM_Windows_Users_POC,POC users enabled for Windows,,
+SG_AAD_Enterprise_State_Roaming_POC,POC users enabed for Enterprise State Roaming,,
+SG_AAD_Enterprise_State_Roaming,All users enabed for Enterprise State Roaming,DynamicMembership,"(user.accountEnabled -eq True) and (user.assignedPlans -any (assignedPlan.servicePlanId -eq ""c1ec4a95-1f05-45b3-a911-aa3fa01094f5"" -and assignedPlan.capabilityStatus -eq ""Enabled""))"
