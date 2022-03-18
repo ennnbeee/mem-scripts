@@ -1,5 +1,5 @@
 <#PSScriptInfo 
-    .VERSION 3.0
+    .VERSION 3.1
     .GUID f5187e3f-ed0a-4ce1-b438-d8f421619ca3 
     .ORIGINAL AUTHOR Jan Van Meirvenne 
     .MODIFIED BY Sooraj Rajagopalan, Paul Huijbregts & Pieter Wigleven, Sean McLaren, Imad Balute, Nick Benton
