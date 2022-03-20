@@ -47,7 +47,8 @@ Param()
 #Sets the variables for the customer
 $domain = "onprem.local" #local domain
 $ComputerPrefix = "PRE-" #Prefix
-$wait = "3600" #sets the restart wait time in seconds
+$waittime = "60" #sets the restart wait time in minutes
+
 
 # If we are running as a 32-bit process on an x64 system, re-launch as a 64-bit process
 if ("$env:PROCESSOR_ARCHITEW6432" -ne "ARM64")
@@ -96,6 +97,7 @@ if ($goodToGo)
     # Get the new computer name
     #$newName = Invoke-RestMethod -Method GET -Uri "https://generatename.azurewebsites.net/api/HttpTrigger1?prefix=AD-"
 
+    #Get serial and removes commas
     $Serial = Get-WmiObject Win32_bios | Select-Object -ExpandProperty SerialNumber
     $newName = $ComputerPrefix + $Serial
     $newName = $newName.Replace(" ","") #Removes spaces
@@ -122,8 +124,9 @@ if ($goodToGo)
         Exit 1641
     }
     else {
-        Write-Host "Initiating a restart in 60 minutes"
-        & shutdown.exe /g /t $wait /f /c "Restarting the computer in 60 minutes due to a computer name change. Please save your work."
+        $waitinseconds = (New-TimeSpan -Minutes $waittime).Seconds
+        Write-Host "Initiating a restart in $waitime minutes"
+        & shutdown.exe /g /t $waitinseconds /f /c "Restarting the computer in 60 minutes due to a computer name change. Please save your work."
         Stop-Transcript
         Exit 0
     }
