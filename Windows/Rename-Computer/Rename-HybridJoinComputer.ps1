@@ -107,7 +107,7 @@ if ($goodToGo)
     else {
         $waitinseconds = (New-TimeSpan -Minutes $waittime).Seconds
         Write-Host "Initiating a restart in $waitime minutes"
-        & shutdown.exe /g /t $waitinseconds /f /c "Restarting the computer in 60 minutes due to a computer name change. Please save your work."
+        & shutdown.exe /g /t $waitinseconds /f /c "Restarting the computer in $wait minutes due to a computer name change. Please save your work."
         Stop-Transcript
         Exit 0
     }
