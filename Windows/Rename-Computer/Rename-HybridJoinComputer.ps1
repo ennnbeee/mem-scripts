@@ -1,45 +1,26 @@
-
 <#PSScriptInfo
-
 .VERSION 1.1
-
 .GUID 3b42d8c8-cda5-4411-a623-90d812a8e29e
-
 .AUTHOR Michael Niehaus
-
 .Contributor Nick Benton
-
 .COMPANYNAME Microsoft
-
 .COPYRIGHT
-
 .TAGS
-
 .LICENSEURI
-
 .PROJECTURI
-
 .ICONURI
-
 .EXTERNALMODULEDEPENDENCIES 
-
 .REQUIREDSCRIPTS
-
 .EXTERNALSCRIPTDEPENDENCIES
-
 .RELEASENOTES
 Version 1.0: Initial version.
 Version 1.1: Updated version.
-
 .PRIVATEDATA
-
 #>
 
 <# 
-
 .DESCRIPTION 
  Rename the computer 
-
 #> 
 
 Param()
