@@ -11,7 +11,7 @@
     "deviceManagementApplicabilityRuleDeviceMode":  null,
     "createdDateTime":  "\/Date(1632817280483)\/",
     "description":  "NCSC guidlines tested on Windows 10 2004 and Windows 11 Enterprise Edition.",
-    "displayName":  "NCSC - BitLocker",
+    "displayName":  "Configuration_Windows_NCSC_BitLocker",
     "version":  3,
     "dmaGuardDeviceEnumerationPolicy":  "deviceDefault",
     "userRightsAccessCredentialManagerAsTrustedCaller":  null,

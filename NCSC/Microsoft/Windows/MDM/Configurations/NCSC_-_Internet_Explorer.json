@@ -10,8 +10,8 @@
     "deviceManagementApplicabilityRuleOsVersion":  null,
     "deviceManagementApplicabilityRuleDeviceMode":  null,
     "createdDateTime":  "2021-06-30T15:02:41.3403451Z",
-    "description":  "",
-    "displayName":  "NCSC - Internet Explorer",
+    "description":  "NCSC guidlines tested on Windows 10 2004 and Windows 11 Enterprise Edition.",
+    "displayName":  "Configuration_Windows_NCSC_Internet_Explorer",
     "version":  1,
     "omaSettings":  [
                         {

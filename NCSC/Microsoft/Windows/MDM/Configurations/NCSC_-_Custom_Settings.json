@@ -11,7 +11,7 @@
     "deviceManagementApplicabilityRuleDeviceMode":  null,
     "createdDateTime":  "2021-06-30T15:02:26.9861488Z",
     "description":  "NCSC guidlines tested on Windows 10 2004 and Windows 11 Enterprise Edition.",
-    "displayName":  "NCSC - Custom Settings",
+    "displayName":  "Configuration_Windows_NCSC_Custom_Settings",
     "version":  1,
     "omaSettings":  [
                         {
