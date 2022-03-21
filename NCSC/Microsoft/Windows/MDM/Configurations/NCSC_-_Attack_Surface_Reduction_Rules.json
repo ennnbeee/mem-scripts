@@ -10,7 +10,7 @@
     "deviceManagementApplicabilityRuleOsVersion":  null,
     "deviceManagementApplicabilityRuleDeviceMode":  null,
     "createdDateTime":  "\/Date(1632817279290)\/",
-    "description":  null,
+    "description":  "NCSC guidlines tested on Windows 10 2004 and Windows 11 Enterprise Edition.",
     "displayName":  "NCSC - Attack Surface Reduction Rules",
     "version":  3,
     "dmaGuardDeviceEnumerationPolicy":  "deviceDefault",
