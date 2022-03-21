@@ -10,8 +10,8 @@
     "deviceManagementApplicabilityRuleOsVersion":  null,
     "deviceManagementApplicabilityRuleDeviceMode":  null,
     "createdDateTime":  "2021-06-30T15:02:26.9861488Z",
-    "description":  "NCSC guidlines tested on Windows 10 2004 and Windows 11 Enterprise Edition.",
-    "displayName":  "Configuration_Windows_NCSC_Custom_Settings",
+    "description":  "This NCSC configuration was last tested against Windows 10 20H2 in December 2020 and Windows 11 in September 2021. Any guidance points given are recommendations - they are not mandatory. Risk owners and administrators should agree a configuration which balances business requirements, usability and the security of the platform.",
+    "displayName":  "Configuration_Windows_Corporate_NCSC_Custom_Settings",
     "version":  1,
     "omaSettings":  [
                         {
