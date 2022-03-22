@@ -95,7 +95,7 @@
     "localSecurityOptionsDoNotAllowAnonymousEnumerationOfSAMAccounts":  false,
     "localSecurityOptionsAllowAnonymousEnumerationOfSAMAccountsAndShares":  false,
     "localSecurityOptionsDoNotStoreLANManagerHashValueOnNextPasswordChange":  false,
-    "localSecurityOptionsSmartCardRemovalBehavior":  null,
+    "localSecurityOptionsSmartCardRemovalBehavior":  false,
     "defenderSecurityCenterDisableAppBrowserUI":  null,
     "defenderSecurityCenterDisableFamilyUI":  true,
     "defenderSecurityCenterDisableHealthUI":  null,
