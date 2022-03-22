@@ -1,0 +1,21 @@
+{
+    "@odata.type":  "#microsoft.graph.editionUpgradeConfiguration",
+    "id":  "7a6946d2-b76f-b6f9-eb04-303ec7edd2c1",
+    "lastModifiedDateTime":  "2020-07-29T19:12:21.7590398Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2020-02-18T13:47:41.1523306Z",
+    "description":  "Default edition upgrade policy",
+    "displayName":  "Z-Disabled - Edition Upgrade Policy",
+    "version":  3,
+    "licenseType":  "notConfigured",
+    "targetEdition":  "notConfigured",
+    "license":  null,
+    "productKey":  null,
+    "windowsSMode":  "block"
+}

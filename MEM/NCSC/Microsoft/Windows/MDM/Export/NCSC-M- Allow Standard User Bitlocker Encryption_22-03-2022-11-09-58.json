@@ -1,0 +1,28 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "5eda2ad3-a165-4abc-8300-a6dd87232701",
+    "lastModifiedDateTime":  "2020-08-04T22:49:28.9562967Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2020-07-13T07:46:22.5417759Z",
+    "description":  "CSP policy manually with a custom OMA-URI for standard enduser to encryot device",
+    "displayName":  "NCSC-M- Allow Standard User Bitlocker Encryption",
+    "version":  3,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "AllowStandardUserEncryption",
+                            "description":  "AllowStandardUserEncryption",
+                            "omaUri":  "./Vendor/MSFT/BitLocker/AllowStandardUserEncryption",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  1,
+                            "isReadOnly":  false
+                        }
+                    ]
+}

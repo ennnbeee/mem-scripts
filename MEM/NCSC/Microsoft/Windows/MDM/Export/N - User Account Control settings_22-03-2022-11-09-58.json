@@ -1,0 +1,98 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "146d3688-6dd9-48ba-a766-08783e5fe614",
+    "lastModifiedDateTime":  "2020-07-29T22:58:00.2143541Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2020-07-10T08:52:11.0381638Z",
+    "description":  null,
+    "displayName":  "N - User Account Control settings",
+    "version":  14,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "UserAccountControl_UseAdminApprovalMode",
+                            "description":  "User Account Control: Admin Approval Mode for the built-in Administrator account",
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_UseAdminApprovalMode",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "UserAccountControl_ AllowUIAccessApplicationsToPromptForElevation",
+                            "description":  "User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop",
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_AllowUIAccessApplicationsToPromptForElevation",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "UserAccountControl_ BehaviorOfTheElevationPromptForAdministrators",
+                            "description":  "User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode",
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForAdministrators",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "UserAccountControl_ BehaviorOfTheElevationPromptForStandardUsers",
+                            "description":  "User Account Control: Behavior of the elevation prompt for standard users",
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "UserAccountControl_ DetectApplicationInstallationsAndPrompt ForElevation",
+                            "description":  "User Account Control: Detect application installations and prompt for elevation",
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_DetectApplicationInstallationsAndPromptForElevation",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "UserAccountControl_ OnlyElevateExecutableFilesThatAreSigned AndValidated",
+                            "description":  "User Account Control: Only elevate executables that are signed and validated",
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateExecutableFilesThatAreSignedAndValidated",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "UserAccountControl_ OnlyElevateUIAccessApplicationsThatAreInstalled InSecureLocations",
+                            "description":  "User Account Control: Only elevate UIAccess applications that are installed in secure locations",
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_OnlyElevateUIAccessApplicationsThatAreInstalledInSecureLocations",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "UserAccountControl_ SwitchToTheSecureDesktopWhenPrompting ForElevation",
+                            "description":  "User Account Control: Switch to the secure desktop when prompting for elevation",
+                            "omaUri":  "./Vendor/MSFT/Policy/Config/LocalPoliciesSecurityOptions/UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        }
+                    ]
+}

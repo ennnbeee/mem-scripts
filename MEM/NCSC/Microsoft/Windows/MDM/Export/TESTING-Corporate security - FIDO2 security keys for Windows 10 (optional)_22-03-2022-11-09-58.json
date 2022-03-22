@@ -1,0 +1,28 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "3b7f07af-4abd-43b4-b08a-04f2e734b12b",
+    "lastModifiedDateTime":  "2020-04-13T23:09:20.8828769Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2020-04-13T23:06:54.1119219Z",
+    "description":  "Enables FIDO2 security keys as a sign-in method for Windows 10",
+    "displayName":  "TESTING-Corporate security - FIDO2 security keys for Windows 10 (optional)",
+    "version":  2,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "Turn on FIDO Security Keys for Windows Sign-In",
+                            "description":  null,
+                            "omaUri":  "./Device/Vendor/MSFT/PassportForWork/SecurityKey/UseSecurityKeyForSignin",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  1,
+                            "isReadOnly":  false
+                        }
+                    ]
+}

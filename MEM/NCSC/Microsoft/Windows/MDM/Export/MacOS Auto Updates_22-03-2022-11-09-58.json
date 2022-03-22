@@ -1,0 +1,20 @@
+{
+    "@odata.type":  "#microsoft.graph.macOSCustomConfiguration",
+    "id":  "2e7f77d5-9598-4c5d-a369-afdf79dcb336",
+    "lastModifiedDateTime":  "2022-01-20T18:47:37.882237Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2022-01-20T18:47:37.882237Z",
+    "description":  "https://www.notbad.tech/all-things-it/intune/intune-enable-automatic-software-security-updates-for-macos/",
+    "displayName":  "MacOS Auto Updates",
+    "version":  1,
+    "payloadName":  "MacOS Automatic Software \u0026 Security Updates",
+    "payloadFileName":  "MacOS_Updates.xml",
+    "payload":  "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cuYXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEuMCI+DQoJPGRpY3Q+DQoJCTxrZXk+UGF5bG9hZENvbnRlbnQ8L2tleT4NCgkJPGFycmF5Pg0KCQkJPGRpY3Q+DQoJCQkJPGtleT5BbGxvd1ByZVJlbGVhc2VJbnN0YWxsYXRpb248L2tleT4NCgkJCQk8ZmFsc2UgLz4NCgkJCQk8a2V5PkF1dG9tYXRpY2FsbHlJbnN0YWxsQXBwVXBkYXRlczwva2V5Pg0KCQkJCTxmYWxzZSAvPg0KCQkJCTxrZXk+QXV0b21hdGljYWxseUluc3RhbGxNYWNPU1VwZGF0ZXM8L2tleT4NCgkJCQk8ZmFsc2UgLz4NCgkJCQk8a2V5PkF1dG9tYXRpY0Rvd25sb2FkPC9rZXk+DQoJCQkJPGZhbHNlIC8+DQoJCQkJPGtleT5Db25maWdEYXRhSW5zdGFsbDwva2V5Pg0KCQkJCTxmYWxzZSAvPg0KCQkJCTxrZXk+UGF5bG9hZERpc3BsYXlOYW1lPC9rZXk+DQoJCQkJPHN0cmluZz5TZWN1cml0eSBVcGRhdGU8L3N0cmluZz4NCgkJCQk8a2V5PlBheWxvYWRJZGVudGlmaWVyPC9rZXk+DQoJCQkJPHN0cmluZz5jb20uYXBwbGUuU29mdHdhcmVVcGRhdGUuNDdkMWY5ZjItNzFiZi00NThiLWEzNTctNzZhMmZkMWY0NGQ1PC9zdHJpbmc+DQoJCQkJPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KCQkJCTxzdHJpbmc+Y29tLmFwcGxlLlNvZnR3YXJlVXBkYXRlPC9zdHJpbmc+DQoJCQkJPGtleT5QYXlsb2FkVVVJRDwva2V5Pg0KCQkJCTxzdHJpbmc+NTJhY2NjOGMtMWJmOC00ODJmLWFhZDUtM2MyZjk2YWNmMjAxPC9zdHJpbmc+DQoJCQkJPGtleT5QYXlsb2FkVmVyc2lvbjwva2V5Pg0KCQkJCTxpbnRlZ2VyPjE8L2ludGVnZXI+DQoJCQk8L2RpY3Q+DQoJCTwvYXJyYXk+DQoJCTxrZXk+UGF5bG9hZERpc3BsYXlOYW1lPC9rZXk+DQoJCTxzdHJpbmc+U2VjdXJpdHlVcGRhdGVzPC9zdHJpbmc+DQoJCTxrZXk+UGF5bG9hZElkZW50aWZpZXI8L2tleT4NCgkJPHN0cmluZz5TZWN1cml0eVVwZGF0ZXMuYzM3ZWU3ZGMtYWI3Ny00M2ExLTg2NDEtOGQ3YWU2YjAyMDU0PC9zdHJpbmc+DQoJCTxrZXk+UGF5bG9hZFR5cGU8L2tleT4NCgkJPHN0cmluZz5Db25maWd1cmF0aW9uPC9zdHJpbmc+DQoJCTxrZXk+UGF5bG9hZFVVSUQ8L2tleT4NCgkJPHN0cmluZz45YjI1YjRhZS04MTdmLTQ2NWQtODdjZi1mNjg5YjlhMTY0NjM8L3N0cmluZz4NCgkJPGtleT5QYXlsb2FkVmVyc2lvbjwva2V5Pg0KCQk8aW50ZWdlcj4xPC9pbnRlZ2VyPg0KCTwvZGljdD4NCjwvcGxpc3Q+",
+    "deploymentChannel":  "deviceChannel"
+}

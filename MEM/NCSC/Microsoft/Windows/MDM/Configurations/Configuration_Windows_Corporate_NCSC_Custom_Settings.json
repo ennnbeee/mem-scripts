@@ -1,0 +1,513 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "42062c5c-1cd5-4149-9eb7-3b54e48d6754",
+    "lastModifiedDateTime":  "2022-03-22T11:05:49.2834449Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2022-03-22T10:54:51.5743109Z",
+    "description":  "This NCSC configuration was last tested against Windows 10 20H2 in December 2020 and Windows 11 in September 2021. Any guidance points given are recommendations - they are not mandatory. Risk owners and administrators should agree a configuration which balances business requirements, usability and the security of the platform.\n\nhttps://www.ncsc.gov.uk/collection/device-security-guidance/platform-guides/windows",
+    "displayName":  "Configuration_Windows_Corporate_NCSC_Custom_Settings",
+    "version":  2,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "Search/AllowIndexingEncryptedStoresOrItems",
+                            "description":  "AllowIndexingEncryptedStoresOrItems",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Search/AllowIndexingEncryptedStoresOrItems",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "LanmanWorkstation/EnableInsecureGuestLogons",
+                            "description":  "EnableInsecureGuestLogons",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/LanmanWorkstation/EnableInsecureGuestLogons",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "Games/AllowAdvancedGamingServices",
+                            "description":  "AllowAdvancedGamingServices",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Games/AllowAdvancedGamingServices",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteAssistance/SolicitedRemoteAssistance",
+                            "description":  "SolicitedRemoteAssistance",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteAssistance/SolicitedRemoteAssistance",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_461e6a33-dadf-486a-bfe2-2013ff845baa",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "AutoPlay/DisallowAutoplayForNonVolumeDevices",
+                            "description":  "DisallowAutoplayForNonVolumeDevices",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/AutoPlay/DisallowAutoplayForNonVolumeDevices",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_c8eb8ee9-96f8-426e-988e-cc0e6f93afaa",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteDesktopServices/DoNotAllowDriveRedirection",
+                            "description":  "DoNotAllowDriveRedirection",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DoNotAllowDriveRedirection",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_af101d1d-ee85-40cb-98d7-6d5158f420bb",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteDesktopServices/PromptForPasswordUponConnection",
+                            "description":  "PromptForPasswordUponConnection",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/PromptForPasswordUponConnection",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_ea82bfcc-cd60-4097-bfa3-7cef3857e2c9",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteDesktopServices/RequireSecureRPCCommunication",
+                            "description":  "RequireSecureRPCCommunication",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/RequireSecureRPCCommunication",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_f38fec49-b61f-4e1e-82d7-21c0262c66c7",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "DeviceLock/PreventLockScreenSlideShow",
+                            "description":  "PreventLockScreenSlideShow",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceLock/PreventLockScreenSlideShow",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_0b77a7a3-7969-4ccf-8a32-3eeb67329e82",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSecurityGuide/EnableStructuredExceptionHandlingOverwriteProtection",
+                            "description":  "MSSecurityGuide/EnableStructuredExceptionHandlingOverwriteProtection",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSecurityGuide/EnableStructuredExceptionHandlingOverwriteProtection",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_2a471097-4fd7-4c62-b3fa-9d96286982f4",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes",
+                            "description":  "AllowICMPRedirectsToOverrideOSPFGeneratedRoutes",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSLegacy/AllowICMPRedirectsToOverrideOSPFGeneratedRoutes",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_2b9d6dde-bf5e-4194-bd65-3960f1a070fd",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers",
+                            "description":  "AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSLegacy/AllowTheComputerToIgnoreNetBIOSNameReleaseRequestsExceptFromWINSServers",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_9ca11bb1-ff2e-4dbd-b952-6f433ea6f749",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "DeviceInstallation/PreventInstallationOfMatchingDeviceIDs",
+                            "description":  "PreventInstallationOfMatchingDeviceIDs",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceIDs",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_ef2a7963-fe51-4f1b-87f0-2a9ac4242762",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses",
+                            "description":  "PreventInstallationOfMatchingDeviceSetupClasses",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_e5a48163-e73a-4642-9c8e-c53d8f3ee781",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "System/BootStartDriverInitialization",
+                            "description":  "BootStartDriverInitialization",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/System/BootStartDriverInitialization",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_c7675cb5-f19c-473f-9ea9-93f76451ce69",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteProcedureCall/RestrictUnauthenticatedRPCClients",
+                            "description":  "RemoteProcedureCall/RestrictUnauthenticatedRPCClients",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteProcedureCall/RestrictUnauthenticatedRPCClients",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_cd61a44e-85b8-4f37-a916-1a2aa3d6e1ad",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Autoplay/SetDefaultAutoRunBehavior",
+                            "description":  "Autoplay/SetDefaultAutoRunBehavior",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Autoplay/SetDefaultAutoRunBehavior",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_a0a63eb9-8312-448b-833f-d6ae4f4827be",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Autoplay/TurnOffAutoPlay",
+                            "description":  "TurnOffAutoPlay",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Autoplay/TurnOffAutoPlay",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_dac7c3e9-085c-4405-b5bd-105877d9e470",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteDesktopServices/ClientConnectionEncryptionLevel",
+                            "description":  "ClientConnectionEncryptionLevel",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/ClientConnectionEncryptionLevel",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_455310db-5d6c-4d03-a5a6-9b38d9124251",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSecurityGuide/ApplyUACRestrictionsToLocalAccountsOnNetworkLogon",
+                            "description":  "ApplyUACRestrictionsToLocalAccountsOnNetworkLogon",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSecurityGuide/ApplyUACRestrictionsToLocalAccountsOnNetworkLogon",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_42f95966-c9ba-46df-9c37-f992ed459615",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSecurityGuide/ConfigureSMBV1ClientDriver",
+                            "description":  "ConfigureSMBV1ClientDriver",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSecurityGuide/ConfigureSMBV1ClientDriver",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_7ccb4daf-a003-4ecc-89c1-8e915ea51530",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSecurityGuide/ConfigureSMBV1Server",
+                            "description":  "ConfigureSMBV1Server",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSecurityGuide/ConfigureSMBV1Server",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_220c37b5-6b9f-493f-84d9-633be5625775",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSecurityGuide/WDigestAuthentication",
+                            "description":  "WDigestAuthentication",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSecurityGuide/WDigestAuthentication",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_753f470d-23ef-4906-8b9c-4dcafbee5af5",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSLegacy/IPSourceRoutingProtectionLevel",
+                            "description":  "IPSourceRoutingProtectionLevel",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSLegacy/IPSourceRoutingProtectionLevel",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_b3a2cbec-ebdd-46d0-9332-a289d0396585",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "MSSLegacy/IPv6SourceRoutingProtectionLevel",
+                            "description":  "IPv6SourceRoutingProtectionLevel",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/MSSLegacy/IPv6SourceRoutingProtectionLevel",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_eeb0eb48-ab37-46c3-a191-3da506880a79",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteManagement/AllowBasicAuthentication_Client",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-remotemanagement#remotemanagement-allowbasicauthentication-client",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowBasicAuthentication_Client",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_e5e4bc2c-bf54-4e6f-9098-6d7ceb0f7bc5",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteManagement/AllowBasicAuthentication_Service",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-remotemanagement#remotemanagement-allowbasicauthentication-service",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowBasicAuthentication_Service",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_db2bf943-b0e0-4981-b00a-74eedcf052fd",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteManagement/AllowUnencryptedTraffic_Client",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-remotemanagement#remotemanagement-allowunencryptedtraffic-client",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowUnencryptedTraffic_Client",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_656ac3ff-2785-446b-a17c-09c8ad413ef6",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteManagement/AllowUnencryptedTraffic_Service",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-remotemanagement#remotemanagement-allowunencryptedtraffic-service",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowUnencryptedTraffic_Service",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_2f2563e0-8866-4530-8302-5dfb30829535",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowsconnectionmanager",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_b6e12a14-014d-45d9-801f-e1dbf5ac66ac",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Connectivity/DisableDownloadingOfPrintDriversOverHTTP",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-connectivity#connectivity-disabledownloadingofprintdriversoverhttp",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Connectivity/DisableDownloadingOfPrintDriversOverHTTP",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_5174a40f-fda3-461d-ab0b-06ad86c5ed6f",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-connectivity#connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_2e65756b-bd5c-416a-88b4-5cdce8180fab",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "AppRuntime/AllowMicrosoftAccountsToBeOptional",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-appruntime#appruntime-allowmicrosoftaccountstobeoptional",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/AppRuntime/AllowMicrosoftAccountsToBeOptional",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_365b2fce-5cd4-49f7-8ccf-cab95547b5d3",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "FileExplorer/TurnOffHeapTerminationOnCorruption",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-fileexplorer#fileexplorer-turnoffheapterminationoncorruption",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/FileExplorer/TurnOffHeapTerminationOnCorruption",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_e6d47f65-1be7-4195-8b14-a1c01f3abcb8",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "FileExplorer/TurnOffDataExecutionPreventionForExplorer",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-fileexplorer#fileexplorer-turnoffdataexecutionpreventionforexplorer",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/FileExplorer/TurnOffDataExecutionPreventionForExplorer",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_ae0d9bad-cae9-4358-8b3e-f47478d93d34",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteManagement/DisallowStoringOfRunAsCredentials",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-remotemanagement#remotemanagement-disallowstoringofrunascredentials",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteManagement/DisallowStoringOfRunAsCredentials",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_b1634f40-e9e9-4dfd-ab86-5a55341daaa6",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteDesktopServices/DoNotAllowPasswordSaving",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-remotedesktopservices#remotedesktopservices-donotallowpasswordsaving",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteDesktopServices/DoNotAllowPasswordSaving",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_a7194a8b-b3f9-4df4-89ac-2bacd58bec21",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "WindowsPowerShell/TurnOnPowerShellScriptBlockLogging",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-windowspowershell#windowspowershell-turnonpowershellscriptblocklogging",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/WindowsPowerShell/TurnOnPowerShellScriptBlockLogging",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_d5d3ab9c-0dab-44c0-9c9f-bd6aa18b1680",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Connectivity/HardenedUNCPaths",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-connectivity#connectivity-hardeneduncpaths",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Connectivity/HardenedUNCPaths",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_dfaaca2f-8134-457f-9669-ba8146721107",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-credentialsdelegation#credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_ae012839-8fc5-4e3d-8414-54814014f9d0",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "Privacy/LetAppsActivateWithVoiceAboveLock",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-privacy#privacy-letappsactivatewithvoiceabovelock",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Privacy/LetAppsActivateWithVoiceAboveLock",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  2,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "RemoteManagement/DisallowDigestAuthentication",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-remotemanagement#remotemanagement-disallownegotiateauthenticationclient",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/RemoteManagement/DisallowDigestAuthentication",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_efffafa9-9358-4a60-b596-3a7f5c4cea21",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Connectivity#connectivity-prohibitinstallationandconfigurationofnetworkbridge",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_7e76ef89-fc43-40bc-9e86-f845646724ae",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Power/AllowStandbyStatesWhenSleepingOnBattery",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-power#power-allowstandbystateswhensleepingonbattery",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/AllowStandbyStatesWhenSleepingOnBattery",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_f8b4a1d3-a76c-4ab4-b539-1f7e65f81110",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Power/AllowStandbyWhenSleepingPluggedIn",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-power#power-allowstandbywhensleepingpluggedin",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/Power/AllowStandbyWhenSleepingPluggedIn",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_c3121f75-f047-4243-9747-5fd34d161cbb",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "EventLogService/SpecifyMaximumFileSizeSecurityLog",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-eventlogservice#eventlogservice-specifymaximumfilesizesecuritylog",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/EventLogService/SpecifyMaximumFileSizeSecurityLog",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_d9d094f9-4fa9-452f-91f6-935c3403368d",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "Network Isolation - Enterprise Proxy Servers Are Authoritative",
+                            "description":  "Network Isolation - Enterprise Proxy Servers Are Authoritative",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/NetworkIsolation/EnterpriseProxyServersAreAuthoritative",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  1,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Error Reporting - Disable Windows Error Reporting",
+                            "description":  "Error Reporting - Disable Windows Error Reporting",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisableWindowsErrorReporting",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_42062c5c-1cd5-4149-9eb7-3b54e48d6754_ea72842a-0314-436a-aa28-38b223051458",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingBoolean",
+                            "displayName":  "Disable User ESP",
+                            "description":  "Disable Enrollment Status Page post Build",
+                            "omaUri":  "./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  true
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingBoolean",
+                            "displayName":  "Disable Device ESP",
+                            "description":  "Disable Enrollment Status Page post Build",
+                            "omaUri":  "./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipDeviceStatusPage",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  true
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "Disable first sign-in animation",
+                            "description":  "Disable first sign-in animation",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/WindowsLogon/EnableFirstLogonAnimation",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "ConfigureSystemGuardLaunch",
+                            "description":  "ConfigureSystemGuardLaunch",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceGuard/ConfigureSystemGuardLaunch",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  1,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "DmaGuard/DeviceEnumerationPolicy",
+                            "description":  "more control over the enumeration of external DMA capable devices incompatible with DMA Remapping/device memory isolation and sandboxing.",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DmaGuard/DeviceEnumerationPolicy",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  0,
+                            "isReadOnly":  false
+                        },
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "MDMWinsOverGP",
+                            "description":  "https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-controlpolicyconflict",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/ControlPolicyConflict/MDMWinsOverGP",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  1,
+                            "isReadOnly":  false
+                        }
+                    ]
+}

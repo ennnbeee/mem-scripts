@@ -1,0 +1,27 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "c636ec1b-1211-434e-8a6a-833ea51c84c5",
+    "lastModifiedDateTime":  "2020-04-06T21:32:21.8788515Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2020-04-06T21:32:21.8788515Z",
+    "description":  "User account hardening configuration that matches the Windows 10 NCSC MDM guidance - all this configuration is custom OMA-URI",
+    "displayName":  "NCSC - Windows 10 (1803) - User Account Hardening - 1 of 2",
+    "version":  1,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingString",
+                            "displayName":  "Credentials UI - Disable Password Reveal",
+                            "description":  "Credentials UI - Disable Password Reveal",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/CredentialsUI/DisablePasswordReveal",
+                            "secretReferenceValueId":  "6f6e76e6-6bd8-46ab-b4bf-7676346dc750_c636ec1b-1211-434e-8a6a-833ea51c84c5_ea3bf115-c347-4093-b31a-e1898c553434",
+                            "isEncrypted":  true,
+                            "value":  "****"
+                        }
+                    ]
+}

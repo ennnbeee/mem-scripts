@@ -1,0 +1,28 @@
+{
+    "@odata.type":  "#microsoft.graph.windows10CustomConfiguration",
+    "id":  "d9aee8fa-3905-4445-a60b-6e79a0fd4c6b",
+    "lastModifiedDateTime":  "2021-12-17T13:24:46.8353225Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2021-12-17T13:14:02.8505491Z",
+    "description":  null,
+    "displayName":  "Test (Sven) - Screen Lock",
+    "version":  2,
+    "omaSettings":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.omaSettingInteger",
+                            "displayName":  "ScreenLock",
+                            "description":  "Inactivity time before Win10 screen locks",
+                            "omaUri":  "./Device/Vendor/MSFT/Policy/Config/DeviceLock/MaxInactivityTimeDeviceLock",
+                            "secretReferenceValueId":  null,
+                            "isEncrypted":  false,
+                            "value":  20,
+                            "isReadOnly":  false
+                        }
+                    ]
+}
