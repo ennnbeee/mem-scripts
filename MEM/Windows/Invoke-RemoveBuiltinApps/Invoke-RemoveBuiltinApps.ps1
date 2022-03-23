@@ -17,7 +17,7 @@
     Author:      Nickolaj Andersen
     Contact:     @NickolajA
     Created:     2019-03-10
-    Updated:     2021-02-02
+    Updated:     2022-03-23
 
     Version history:
     1.0.0 - (2019-03-10) Initial script updated with help section and a fix for randomly freezing
@@ -25,6 +25,7 @@
     1.1.1 - (2019-08-13) Removed the part where it was disabling/enabling configuration for Store updates, as it's not needed
     1.1.2 - (2019-10-03) Removed unnecessary left over functions and updated catch statements so that they actually log the current app that could not be removed
     1.2.0 - (2021-02-02) Added support for Windows 10 version 2004 (20H1) and 20H2
+    1.2.1 - (2022-03-23) Added settings for specific black listing of appx i.e. Microsoft.XboxApp - Nick Benton
 #>
 Begin {
     # White list of Features On Demand V2 packages
@@ -46,6 +47,7 @@ Begin {
         #"Microsoft.WindowsCommunicationsApps", # Mail, Calendar etc
         "Microsoft.WindowsSoundRecorder", 
         "Microsoft.WindowsStore"
+        "Microsoft.CompanyPortal"
     ))
 
     # Windows 10 version 1809
@@ -73,6 +75,16 @@ Begin {
     # Windows 10 version 20H2
     $WhiteListedApps.AddRange(@(
         "Microsoft.MicrosoftEdge.Stable"
+    ))
+
+    #Remove specific pacakges
+    $BlackListedApps = New-Object -TypeName System.Collections.ArrayList
+    $BlackListedApps.AddRange(@(
+        "Microsoft.XboxSpeechToTextOverlay",
+        "Microsoft.XboxGamingOverlay",
+        "Microsoft.XboxGameOverlay",
+        "Microsoft.XboxApp"
+        "Microsoft.Xbox.TCUI"
     ))
 }
 Process {
@@ -147,6 +159,37 @@ Process {
             }
         }
     }
+
+   Write-LogEntry -Value "Starting built-in AppxPackage removal process for blacklisted apps"
+
+   # Determine provisioned apps
+   $AppxArrayList = Get-AppxPackage | Select-Object -ExpandProperty Name
+
+   # Loop through the list of appx packages
+   foreach ($Appx in $AppxArrayList) {
+       Write-LogEntry -Value "Processing appx package: $($Appx)"
+
+       # If application name not in appx package white list, remove AppxPackage and AppxProvisioningPackage
+       if (($Appx -in $BlackListedApps)) {
+            $AppPackageFullName = Get-AppxPackage -Name $Appx | Select-Object -ExpandProperty PackageFullName -First 1
+            # Attempt to remove AppxPackage
+           if ($AppPackageFullName -ne $null) {
+            try {
+                Write-LogEntry -Value "Removing AppxPackage: $($AppPackageFullName)"
+                Remove-AppxPackage -Package $AppPackageFullName -ErrorAction Stop | Out-Null
+            }
+            catch [System.Exception] {
+                Write-LogEntry -Value "Removing AppxPackage '$($AppPackageFullName)' failed: $($_.Exception.Message)"
+            }
+        }
+            else {
+                Write-LogEntry -Value "Unable to locate AppxPackage for current app: $($Appx)"
+            }
+       }
+       else {
+        Write-LogEntry -Value "Skipping excluded application package: $($Appx)"
+       }
+   }    
 
     Write-LogEntry -Value "Starting Features on Demand V2 removal process"
 
