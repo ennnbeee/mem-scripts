@@ -1,0 +1,1 @@
+./Import-SSRSReports.ps1 -ReportServerURI https://sccm01/reportserver -TargetFolderPath "ConfigMgr_SOA/Software_Updates_Compliance" -TargetDataSourcePath "ConfigMgr_SOA/{5C6358F2-4BB6-4a1b-A16E-8D96795D8602}" -DefaultCollectionID "SMSDM003" -DefaultCollectionFilter "All%" -ForceLegacyFormat 

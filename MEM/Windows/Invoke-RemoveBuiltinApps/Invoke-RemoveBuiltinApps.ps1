@@ -84,7 +84,17 @@ Begin {
         "Microsoft.XboxGamingOverlay",
         "Microsoft.XboxGameOverlay",
         "Microsoft.XboxApp"
-        "Microsoft.Xbox.TCUI"
+        "Microsoft.Xbox.TCUI",
+        "Microsoft.XboxIdentityProvider",
+        "Microsoft.XboxGameCallableUI",
+        "Microsoft.SkypeApp",
+        "Microsoft.Office.OneNote",
+        "Microsoft.MicrosoftSolitaireCollection",
+        "Microsoft.MixedReality.Portal",
+        "Microsoft.ZuneVideo",
+        "Microsoft.ZuneMusic",
+        "Microsoft.MicrosoftOfficeHub",
+        "microsoft.windowscommunicationsapps"
     ))
 }
 Process {
