@@ -77,8 +77,20 @@ Begin {
         "Microsoft.MicrosoftEdge.Stable"
     ))
 
+    # Windows 11 version 21H2
+    $WhiteListedApps.AddRange(@(
+        "Microsoft.WindowsTerminal",
+        "Microsoft.Services.Store.Engagement",
+        "Microsoft.NET.Native.Framework.2.2",
+        "Microsoft.UI.Xaml.2.7",
+        "Microsoft.NET.Native.Runtime.2.2",
+        "Microsoft.VCLibs.140.00"
+    ))
+
     #Remove specific pacakges
     $BlackListedApps = New-Object -TypeName System.Collections.ArrayList
+
+    # Windows 10
     $BlackListedApps.AddRange(@(
         "Microsoft.XboxSpeechToTextOverlay",
         "Microsoft.XboxGamingOverlay",
@@ -95,6 +107,11 @@ Begin {
         "Microsoft.ZuneMusic",
         "Microsoft.MicrosoftOfficeHub",
         "microsoft.windowscommunicationsapps"
+    ))
+
+    # Windows 11
+    $BlackListedApps.AddRange(@(
+        
     ))
 }
 Process {
