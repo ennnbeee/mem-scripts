@@ -1,0 +1,10 @@
+===========================================================================
+===========================================================================
+[2022-03-25 08:26:24.978] [INFO] Test-DeviceRegConnectivity 3.1 has started
+[2022-03-25 08:26:24.990] [INFO] Device Name : LT01540
+[2022-03-25 08:26:25.281] [INFO] User Account: phoenixdomain\nick-benton, UPN: nick-benton@phoenixs.co.uk
+[2022-03-25 08:26:25.305] [ERROR] PowerShell is NOT running with elevated privileges
+[2022-03-25 08:26:25.309] [INFO] Recommended action: This test needs to be running with elevated privileges
+[2022-03-25 08:26:25.316] [INFO] Script completed successfully.
+[2022-03-25 08:37:58.014] [INFO] Checking winInet proxy settings...
+[2022-03-25 08:38:02.810] [INFO]     Proxy Enabled : No

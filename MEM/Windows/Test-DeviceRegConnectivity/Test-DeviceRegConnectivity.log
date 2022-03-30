@@ -1,0 +1,58 @@
+===========================================================================
+===========================================================================
+[2022-03-25 08:27:14.774] [INFO] Test-DeviceRegConnectivity 3.1 has started
+[2022-03-25 08:27:14.783] [INFO] Device Name : LT01540
+[2022-03-25 08:27:15.040] [INFO] User Account: phoenixdomain\nick-benton, UPN: nick-benton@phoenixs.co.uk
+[2022-03-25 08:27:15.051] [INFO] Testing Internet Connectivity...
+[2022-03-25 08:27:15.055] [INFO] Checking winHTTP proxy settings...
+[2022-03-25 08:27:15.584] [INFO]       Access Type : DIRECT
+[2022-03-25 08:27:15.589] [INFO] Checking winInet proxy settings...
+===========================================================================
+===========================================================================
+[2022-03-25 08:27:43.561] [INFO] Test-DeviceRegConnectivity 3.1 has started
+[2022-03-25 08:27:43.564] [INFO] Device Name : LT01540
+[2022-03-25 08:27:43.636] [INFO] User Account: phoenixdomain\nick-benton, UPN: nick-benton@phoenixs.co.uk
+[2022-03-25 08:27:43.641] [INFO] Testing Internet Connectivity...
+[2022-03-25 08:27:43.644] [INFO] Checking winHTTP proxy settings...
+[2022-03-25 08:27:43.739] [INFO]       Access Type : DIRECT
+[2022-03-25 08:27:43.750] [INFO] Checking winInet proxy settings...
+===========================================================================
+===========================================================================
+[2022-03-25 08:28:02.757] [INFO] Test-DeviceRegConnectivity 3.1 has started
+[2022-03-25 08:28:02.772] [INFO] Device Name : LT01540
+[2022-03-25 08:28:02.913] [INFO] User Account: phoenixdomain\nick-benton, UPN: nick-benton@phoenixs.co.uk
+[2022-03-25 08:28:02.938] [INFO] Testing Internet Connectivity...
+[2022-03-25 08:28:02.945] [INFO] Checking winHTTP proxy settings...
+[2022-03-25 08:28:03.042] [INFO]       Access Type : DIRECT
+[2022-03-25 08:28:03.059] [INFO] Checking winInet proxy settings...
+[2022-03-25 08:28:06.186] [INFO]     Proxy Enabled : No
+[2022-03-25 08:28:06.186] [INFO] Proxy Server List : 
+[2022-03-25 08:28:06.201] [INFO] Proxy Bypass List : 
+[2022-03-25 08:28:06.201] [INFO]     AutoConfigURL : 
+[2022-03-25 08:28:06.201] [INFO] Testing Device Registration Endpoints...
+[2022-03-25 08:28:06.201] [INFO] Testing connection via winInet...
+[2022-03-25 08:28:09.190] [INFO] Connection to login.microsoftonline.com .............. Succeeded.
+[2022-03-25 08:28:12.441] [INFO] Connection to device.login.microsoftonline.com ......  Succeeded.
+[2022-03-25 08:28:14.946] [INFO] Connection to enterpriseregistration.windows.net ..... Succeeded.
+[2022-03-25 08:28:14.946] [INFO] Test passed: Device is able to communicate with MS endpoints successfully under system context
+[2022-03-25 08:28:14.946] [INFO] Script completed successfully.
+===========================================================================
+===========================================================================
+[2022-03-25 08:28:19.998] [INFO] Test-DeviceRegConnectivity 3.1 has started
+[2022-03-25 08:28:19.998] [INFO] Device Name : LT01540
+[2022-03-25 08:28:20.170] [INFO] User Account: phoenixdomain\nick-benton, UPN: nick-benton@phoenixs.co.uk
+[2022-03-25 08:28:20.170] [INFO] Testing Internet Connectivity...
+[2022-03-25 08:28:20.170] [INFO] Checking winHTTP proxy settings...
+[2022-03-25 08:28:20.264] [INFO]       Access Type : DIRECT
+[2022-03-25 08:28:20.279] [INFO] Checking winInet proxy settings...
+[2022-03-25 08:28:21.928] [INFO]     Proxy Enabled : No
+[2022-03-25 08:28:21.943] [INFO] Proxy Server List : 
+[2022-03-25 08:28:21.943] [INFO] Proxy Bypass List : 
+[2022-03-25 08:28:21.943] [INFO]     AutoConfigURL : 
+[2022-03-25 08:28:21.943] [INFO] Testing Device Registration Endpoints...
+[2022-03-25 08:28:21.943] [INFO] Testing connection via winInet...
+[2022-03-25 08:28:25.211] [INFO] Connection to login.microsoftonline.com .............. Succeeded.
+[2022-03-25 08:28:28.446] [INFO] Connection to device.login.microsoftonline.com ......  Succeeded.
+[2022-03-25 08:28:30.724] [INFO] Connection to enterpriseregistration.windows.net ..... Succeeded.
+[2022-03-25 08:28:30.724] [INFO] Test passed: Device is able to communicate with MS endpoints successfully under system context
+[2022-03-25 08:28:30.724] [INFO] Script completed successfully.
