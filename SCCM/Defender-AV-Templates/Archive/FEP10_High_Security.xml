@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<SecurityPolicy Name="FEP10 High-Security Name" Version="1" Description="FEP10 High-Security" ProductVersion="1.0.0.0" xmlns="http://forefront.microsoft.com/FEP/2010/01/PolicyData">
+    <PolicySection Name="FEP.AmPolicy" Disabled="false">
+        <LocalGroupPolicySettings>
+            <IgnoreKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware" />
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware\Real-Time Protection">
+                <AddValue Name="DisableRealtimeMonitoring" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableOnAccessProtection" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="RealTimeScanDirection" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideDisableRealTimeMonitoring" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideDisableIntrusionPreventionSystem" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideDisableOnAccessProtection" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideDisableIOAVProtection" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideDisableBehaviorMonitoring" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideRealTimeScanDirection" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableIntrusionPreventionSystem" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableIOAVProtection" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableBehaviorMonitoring" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableScriptScanning" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="LocalSettingOverrideDisableScriptScanning" Type="REG_DWORD">0</AddValue>
+            </AddKey>
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware\Threats\ThreatSeverityDefaultAction">
+                <AddValue Name="1" Type="REG_DWORD">6</AddValue>
+                <AddValue Name="2" Type="REG_DWORD">2</AddValue>
+                <AddValue Name="4" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="5" Type="REG_DWORD">0</AddValue>
+            </AddKey>
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware">
+                <AddValue Name="DisableRoutinelyTakingAction" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="RandomizeScheduleTaskTimes" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="DisableLocalAdminMerge" Type="REG_DWORD">1</AddValue>
+            </AddKey>
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware\UX Configuration">
+                <AddValue Name="CustomDefaultActionToastString" Type="REG_SZ" Disabled="true"></AddValue>
+                <AddValue Name="Notification_Suppress" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="UILockdown" Type="REG_DWORD" Disabled="false">0</AddValue>
+            </AddKey>
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware\Scan">
+                <AddValue Name="ScheduleQuickScanTime" Type="REG_DWORD">120</AddValue>
+                <AddValue Name="ScanParameters" Type="REG_DWORD">2</AddValue>
+                <AddValue Name="ScheduleTime" Type="REG_DWORD">180</AddValue>
+                <AddValue Name="ScheduleDay" Type="REG_DWORD">7</AddValue>
+                <AddValue Name="LocalSettingOverrideScheduleTime" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideScheduleQuickScanTime" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideScheduleDay" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideScanParameters" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableCatchupQuickScan" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableCatchupFullScan" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="CheckForSignaturesBeforeRunningScan" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="ScanOnlyIfIdle" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="LocalSettingOverrideAvgCPULoadFactor" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="AvgCPULoadFactor" Type="REG_DWORD" PreviousValue="50">0</AddValue>
+                <AddValue Name="DisableScanningNetworkFiles" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="DisableScanningMappedNetworkDrivesForFullScan" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="DisableArchiveScanning" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableRemovableDriveScanning" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="DisableHeuristics" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="DisableRestorePoint" Type="REG_DWORD">1</AddValue>
+            </AddKey>
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware\Exclusions\Paths">
+                <AddValue Name="%windir%\SoftwareDistribution\Datastore\Datastore.edb" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\SoftwareDistribution\Datastore\Logs\Res*.log" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\SoftwareDistribution\Datastore\Logs\Res*.jrs" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\SoftwareDistribution\Datastore\Logs\Edb.chk" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\SoftwareDistribution\Datastore\Logs\Tmp.edb" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\Security\Database\*.edb" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\Security\Database\*.sdb" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\Security\Database\*.log" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\Security\Database\*.chk" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%windir%\Security\Database\*.jrs" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%ALLUSERSPROFILE%\NTuser.pol" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="%SystemRoot%\System32\GroupPolicy\registry.pol" Type="REG_DWORD">0</AddValue>
+            </AddKey>
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware\Quarantine">
+                <AddValue Name="PurgeItemsAfterDelay" Type="REG_DWORD" PreviousValue="30">0</AddValue>
+                <AddValue Name="LocalSettingOverridePurgeItemsAfterDelay" Type="REG_DWORD">0</AddValue>
+            </AddKey>
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware\Signature Updates">
+                <AddValue Name="SignatureUpdateInterval" Type="REG_DWORD">0</AddValue>
+                <AddValue Name="ScheduleDay" Type="REG_DWORD" Disabled="true">0</AddValue>
+                <AddValue Name="ScheduleTime" Type="REG_DWORD" Disabled="true">120</AddValue>
+                <AddValue Name="SignatureUpdateCatchupInterval" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="AuGracePeriod" Type="REG_DWORD" PreviousValue="72">4320</AddValue>
+                <AddValue Name="DefinitionUpdateFileSharesSources" Type="REG_SZ" Disabled="true"></AddValue>
+                <AddValue Name="FallbackOrder" Type="REG_SZ">AMDefinitionFallbackOrderFromCM|InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC</AddValue>
+                <AddValue Name="SourceOrderOnly" Type="REG_SZ" Disabled="true">FileShares|InternalDefinitionUpdateServer|MicrosoftUpdateServer|MMPC</AddValue>
+            </AddKey>
+            <AddKey Name="SOFTWARE\Policies\Microsoft\Microsoft Antimalware\SpyNet">
+                <AddValue Name="SpyNetReporting" Type="REG_DWORD">1</AddValue>
+                <AddValue Name="LocalSettingOverrideSpyNetReporting" Type="REG_DWORD">0</AddValue>
+            </AddKey>
+        </LocalGroupPolicySettings>
+    </PolicySection>
+    <PolicySection Name="FEP.HostFirewallPolicy" Disabled="false">
+        <WmiPropertySettings>
+            <Namespace Name="Root\Microsoft\PolicyPlatform\WindowsFirewallConfiguration">
+                <Class Name="Firewall_Profile_Domain">
+                    <Instance Identifier="@">
+                        <SetProperty Name="EnableFirewall">True</SetProperty>
+                        <SetProperty Name="BlockAllInboundTraffic">False</SetProperty>
+                        <SetProperty Name="DefaultInboundActionIsDeny">True</SetProperty>
+                        <SetProperty Name="DisableInboundNotifications">False</SetProperty>
+                    </Instance>
+                </Class>
+                <Class Name="Firewall_Profile_Private">
+                    <Instance Identifier="@">
+                        <SetProperty Name="EnableFirewall">True</SetProperty>
+                        <SetProperty Name="BlockAllInboundTraffic">False</SetProperty>
+                        <SetProperty Name="DefaultInboundActionIsDeny">True</SetProperty>
+                        <SetProperty Name="DisableInboundNotifications">False</SetProperty>
+                    </Instance>
+                </Class>
+                <Class Name="Firewall_Profile_Public">
+                    <Instance Identifier="@">
+                        <SetProperty Name="EnableFirewall">True</SetProperty>
+                        <SetProperty Name="BlockAllInboundTraffic">False</SetProperty>
+                        <SetProperty Name="DefaultInboundActionIsDeny">True</SetProperty>
+                        <SetProperty Name="DisableInboundNotifications">False</SetProperty>
+                    </Instance>
+                </Class>
+            </Namespace>
+        </WmiPropertySettings>
+    </PolicySection>
+</SecurityPolicy>
