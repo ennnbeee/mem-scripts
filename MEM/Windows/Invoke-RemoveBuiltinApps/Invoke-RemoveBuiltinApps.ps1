@@ -47,7 +47,8 @@ Begin {
         #"Microsoft.WindowsCommunicationsApps", # Mail, Calendar etc
         "Microsoft.WindowsSoundRecorder", 
         "Microsoft.WindowsStore"
-        "Microsoft.CompanyPortal"
+        "Microsoft.CompanyPortal",
+        "Microsoft.Services.Store.Engagement"
     ))
 
     # Windows 10 version 1809
