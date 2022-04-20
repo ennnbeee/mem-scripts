@@ -14,15 +14,17 @@ function Set-WiFiPriority {
     }
 
     if(($wifiprofiles -match $wifi1) -and ($wifiprofiles -match $wifi2)){
-        # Sets Order
-        netsh wlan set profileorder name="soasinternal" interface="Wi-Fi" priority=1
-        netsh wlan set profileorder name="eduroam" interface="Wi-Fi" priority=2
-        # Sets Autoswitch
-        netsh wlan set profileparameter name="soasinternal" autoswitch=No
-        netsh wlan set profileparameter name="eduroam" autoswitch=Yes
+        Try{
+            netsh wlan set profileorder name=$wifi1 interface="Wi-Fi" priority=1
+            netsh wlan set profileorder name=$wifi2 interface="Wi-Fi" priority=2
+        }
+        Catch{
+            Break
+        }
+
     }
     else{
-        write-host "boo" -ForegroundColor red
+        Break
     }
 }
 
