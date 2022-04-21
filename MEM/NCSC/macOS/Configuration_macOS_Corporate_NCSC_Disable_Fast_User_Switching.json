@@ -1,0 +1,20 @@
+{
+    "@odata.type":  "#microsoft.graph.macOSCustomConfiguration",
+    "id":  "2811db3b-9f50-461e-ab08-dce0eb7f03bf",
+    "lastModifiedDateTime":  "2022-04-21T11:16:52.8323381Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2022-04-21T10:52:10.518183Z",
+    "description":  null,
+    "displayName":  "Configuration_macOS_Corporate_NCSC_Disable_Fast_User_Switching",
+    "version":  2,
+    "payloadName":  "Configuration_macOS_Corporate_NCSC_Disable_Fast_User_Switching",
+    "payloadFileName":  "Configuration_macOS_Corporate_NCSC_Disable_Fast_User_Switching.mobileconfig",
+    "payload":  "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhRE9DVFlQRSBwbGlzdCBQVUJMSUMgIi0vL0FwcGxlLy9EVEQgUExJU1QgMS4wLy9FTiIgImh0dHA6Ly93d3cuYXBwbGUuY29tL0RURHMvUHJvcGVydHlMaXN0LTEuMC5kdGQiPg0KPHBsaXN0IHZlcnNpb249IjEuMCI+DQo8ZGljdD4NCgk8a2V5PlBheWxvYWRDb250ZW50PC9rZXk+DQoJPGFycmF5Pg0KCQk8ZGljdD4NCgkJCTxrZXk+UGF5bG9hZENvbnRlbnQ8L2tleT4NCgkJCTxkaWN0Pg0KCQkJCTxrZXk+Y29tLmFwcGxlLmxvZ2lud2luZG93PC9rZXk+DQoJCQkJPGRpY3Q+DQoJCQkJCTxrZXk+Rm9yY2VkPC9rZXk+DQoJCQkJCTxhcnJheT4NCgkJCQkJCTxkaWN0Pg0KCQkJCQkJCTxrZXk+bWN4X3ByZWZlcmVuY2Vfc2V0dGluZ3M8L2tleT4NCgkJCQkJCQk8ZGljdD4NCgkJCQkJCQkJPGtleT5EaXNhYmxlRkRFQXV0b0xvZ2luPC9rZXk+DQoJCQkJCQkJCTx0cnVlLz4NCgkJCQkJCQk8L2RpY3Q+DQoJCQkJCQk8L2RpY3Q+DQoJCQkJCTwvYXJyYXk+DQoJCQkJPC9kaWN0Pg0KCQkJPC9kaWN0Pg0KCQkJPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCgkJCTxzdHJpbmc+PC9zdHJpbmc+DQoJCQk8a2V5PlBheWxvYWREaXNwbGF5TmFtZTwva2V5Pg0KCQkJPHN0cmluZz5DdXN0b208L3N0cmluZz4NCgkJCTxrZXk+UGF5bG9hZEVuYWJsZWQ8L2tleT4NCgkJCTx0cnVlLz4NCgkJCTxrZXk+UGF5bG9hZElkZW50aWZpZXI8L2tleT4NCgkJCTxzdHJpbmc+NzI0M0E3OTAtNzIzRS00NDMzLUFCQTQtNjI5QzFBOTkyNjRDPC9zdHJpbmc+DQoJCQk8a2V5PlBheWxvYWRUeXBlPC9rZXk+DQoJCQk8c3RyaW5nPmNvbS5hcHBsZS5NYW5hZ2VkQ2xpZW50LnByZWZlcmVuY2VzPC9zdHJpbmc+DQoJCQk8a2V5PlBheWxvYWRVVUlEPC9rZXk+DQoJCQk8c3RyaW5nPjcyNDNBNzkwLTcyM0UtNDQzMy1BQkE0LTYyOUMxQTk5MjY0Qzwvc3RyaW5nPg0KCQkJPGtleT5QYXlsb2FkVmVyc2lvbjwva2V5Pg0KCQkJPGludGVnZXI+MTwvaW50ZWdlcj4NCgkJPC9kaWN0Pg0KCTwvYXJyYXk+DQoJPGtleT5QYXlsb2FkRGVzY3JpcHRpb248L2tleT4NCgk8c3RyaW5nPkFPU1hfMTRfMDAwMDMyIC0gQ3VzdG9tIHBheWxvYWQgJmd0OyBjb20uYXBwbGUubG9naW53aW5kb3cgJmd0OyBEaXNhYmxlRkRFQXV0b0xvZ2luPXRydWU8L3N0cmluZz4NCgk8a2V5PlBheWxvYWREaXNwbGF5TmFtZTwva2V5Pg0KCTxzdHJpbmc+MTAuMTRfU1RJRy1EaXNhYmxlRkRFQXV0b0xvZ2luPC9zdHJpbmc+DQoJPGtleT5QYXlsb2FkRW5hYmxlZDwva2V5Pg0KCTx0cnVlLz4NCgk8a2V5PlBheWxvYWRJZGVudGlmaWVyPC9rZXk+DQoJPHN0cmluZz5BRjYyNEM3My0wOTVGLTRDNjktODlGQi1BMEE3NzFEMTIyNUU8L3N0cmluZz4NCgk8a2V5PlBheWxvYWRSZW1vdmFsRGlzYWxsb3dlZDwva2V5Pg0KCTx0cnVlLz4NCgk8a2V5PlBheWxvYWRTY29wZTwva2V5Pg0KCTxzdHJpbmc+U3lzdGVtPC9zdHJpbmc+DQoJPGtleT5QYXlsb2FkVHlwZTwva2V5Pg0KCTxzdHJpbmc+Q29uZmlndXJhdGlvbjwvc3RyaW5nPg0KCTxrZXk+UGF5bG9hZFVVSUQ8L2tleT4NCgk8c3RyaW5nPkFGNjI0QzczLTA5NUYtNEM2OS04OUZCLUEwQTc3MUQxMjI1RTwvc3RyaW5nPg0KCTxrZXk+UGF5bG9hZFZlcnNpb248L2tleT4NCgk8aW50ZWdlcj4xPC9pbnRlZ2VyPg0KPC9kaWN0Pg0KPC9wbGlzdD4NCg==",
+    "deploymentChannel":  "deviceChannel"
+}

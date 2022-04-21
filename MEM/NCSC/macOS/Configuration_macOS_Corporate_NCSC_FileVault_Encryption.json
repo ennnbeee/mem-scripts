@@ -1,0 +1,50 @@
+{
+    "@odata.type":  "#microsoft.graph.macOSEndpointProtectionConfiguration",
+    "id":  "45f14496-27ca-4304-aedc-25f4b68a4149",
+    "lastModifiedDateTime":  "2022-04-20T08:25:38.7330806Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2022-04-20T08:25:38.7330806Z",
+    "description":  null,
+    "displayName":  "Configuration_macOS_Corporate_NCSC_FileVault_Encryption",
+    "version":  1,
+    "gatekeeperAllowedAppSource":  "notConfigured",
+    "gatekeeperBlockOverride":  false,
+    "firewallEnabled":  false,
+    "firewallBlockAllIncoming":  false,
+    "firewallEnableStealthMode":  false,
+    "fileVaultEnabled":  true,
+    "fileVaultSelectedRecoveryKeyTypes":  "notConfigured",
+    "fileVaultInstitutionalRecoveryKeyCertificate":  null,
+    "fileVaultInstitutionalRecoveryKeyCertificateFileName":  null,
+    "fileVaultPersonalRecoveryKeyHelpMessage":  "You can retrieve the personal recovery key for your macOS device from the Microsoft Intune app, Company Portal website, or Company Portal apps for Android and iOS/iPadOS.",
+    "fileVaultAllowDeferralUntilSignOut":  true,
+    "fileVaultNumberOfTimesUserCanIgnore":  9999,
+    "fileVaultDisablePromptAtSignOut":  false,
+    "fileVaultPersonalRecoveryKeyRotationInMonths":  null,
+    "fileVaultHidePersonalRecoveryKey":  true,
+    "advancedThreatProtectionRealTime":  "notConfigured",
+    "advancedThreatProtectionCloudDelivered":  "notConfigured",
+    "advancedThreatProtectionAutomaticSampleSubmission":  "notConfigured",
+    "advancedThreatProtectionDiagnosticDataCollection":  "notConfigured",
+    "advancedThreatProtectionExcludedFolders":  [
+
+                                                ],
+    "advancedThreatProtectionExcludedFiles":  [
+
+                                              ],
+    "advancedThreatProtectionExcludedExtensions":  [
+
+                                                   ],
+    "advancedThreatProtectionExcludedProcesses":  [
+
+                                                  ],
+    "firewallApplications":  [
+
+                             ]
+}

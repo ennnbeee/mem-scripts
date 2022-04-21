@@ -1,0 +1,50 @@
+{
+    "@odata.type":  "#microsoft.graph.macOSEndpointProtectionConfiguration",
+    "id":  "b000bbca-70e7-4b3e-b3d3-b270fce77536",
+    "lastModifiedDateTime":  "2022-04-20T08:23:23.5223176Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2022-04-20T08:23:23.5223176Z",
+    "description":  null,
+    "displayName":  "Configuration_macOS_Corporate_NCSC_Gatekeeper",
+    "version":  1,
+    "gatekeeperAllowedAppSource":  "macAppStoreAndIdentifiedDevelopers",
+    "gatekeeperBlockOverride":  true,
+    "firewallEnabled":  false,
+    "firewallBlockAllIncoming":  false,
+    "firewallEnableStealthMode":  false,
+    "fileVaultEnabled":  false,
+    "fileVaultSelectedRecoveryKeyTypes":  "notConfigured",
+    "fileVaultInstitutionalRecoveryKeyCertificate":  null,
+    "fileVaultInstitutionalRecoveryKeyCertificateFileName":  null,
+    "fileVaultPersonalRecoveryKeyHelpMessage":  null,
+    "fileVaultAllowDeferralUntilSignOut":  false,
+    "fileVaultNumberOfTimesUserCanIgnore":  null,
+    "fileVaultDisablePromptAtSignOut":  false,
+    "fileVaultPersonalRecoveryKeyRotationInMonths":  null,
+    "fileVaultHidePersonalRecoveryKey":  false,
+    "advancedThreatProtectionRealTime":  "notConfigured",
+    "advancedThreatProtectionCloudDelivered":  "notConfigured",
+    "advancedThreatProtectionAutomaticSampleSubmission":  "notConfigured",
+    "advancedThreatProtectionDiagnosticDataCollection":  "notConfigured",
+    "advancedThreatProtectionExcludedFolders":  [
+
+                                                ],
+    "advancedThreatProtectionExcludedFiles":  [
+
+                                              ],
+    "advancedThreatProtectionExcludedExtensions":  [
+
+                                                   ],
+    "advancedThreatProtectionExcludedProcesses":  [
+
+                                                  ],
+    "firewallApplications":  [
+
+                             ]
+}

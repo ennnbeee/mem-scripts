@@ -1,0 +1,50 @@
+{
+    "@odata.type":  "#microsoft.graph.macOSEndpointProtectionConfiguration",
+    "id":  "694be731-3b5f-4057-a968-33e1deb338f0",
+    "lastModifiedDateTime":  "2022-04-20T09:38:17.7052339Z",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "supportsScopeTags":  true,
+    "deviceManagementApplicabilityRuleOsEdition":  null,
+    "deviceManagementApplicabilityRuleOsVersion":  null,
+    "deviceManagementApplicabilityRuleDeviceMode":  null,
+    "createdDateTime":  "2022-04-20T09:38:17.7052339Z",
+    "description":  null,
+    "displayName":  "Configuration_macOS_Corporate_NCSC_Firewall",
+    "version":  1,
+    "gatekeeperAllowedAppSource":  "notConfigured",
+    "gatekeeperBlockOverride":  false,
+    "firewallEnabled":  true,
+    "firewallBlockAllIncoming":  true,
+    "firewallEnableStealthMode":  true,
+    "fileVaultEnabled":  false,
+    "fileVaultSelectedRecoveryKeyTypes":  "notConfigured",
+    "fileVaultInstitutionalRecoveryKeyCertificate":  null,
+    "fileVaultInstitutionalRecoveryKeyCertificateFileName":  null,
+    "fileVaultPersonalRecoveryKeyHelpMessage":  null,
+    "fileVaultAllowDeferralUntilSignOut":  false,
+    "fileVaultNumberOfTimesUserCanIgnore":  null,
+    "fileVaultDisablePromptAtSignOut":  false,
+    "fileVaultPersonalRecoveryKeyRotationInMonths":  null,
+    "fileVaultHidePersonalRecoveryKey":  false,
+    "advancedThreatProtectionRealTime":  "notConfigured",
+    "advancedThreatProtectionCloudDelivered":  "notConfigured",
+    "advancedThreatProtectionAutomaticSampleSubmission":  "notConfigured",
+    "advancedThreatProtectionDiagnosticDataCollection":  "notConfigured",
+    "advancedThreatProtectionExcludedFolders":  [
+
+                                                ],
+    "advancedThreatProtectionExcludedFiles":  [
+
+                                              ],
+    "advancedThreatProtectionExcludedExtensions":  [
+
+                                                   ],
+    "advancedThreatProtectionExcludedProcesses":  [
+
+                                                  ],
+    "firewallApplications":  [
+
+                             ]
+}
