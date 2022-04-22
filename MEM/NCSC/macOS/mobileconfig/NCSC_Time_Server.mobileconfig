@@ -7,44 +7,48 @@
 		<dict>
 			<key>PayloadContent</key>
 			<dict>
-				<key>com.apple.loginwindow</key>
+				<key>com.apple.MCX</key>
 				<dict>
 					<key>Forced</key>
 					<array>
 						<dict>
 							<key>mcx_preference_settings</key>
 							<dict>
-								<key>DisableFDEAutoLogin</key>
-								<true/>
+								<key>timeServer</key>
+								<string>time.google.com,time.euro.apple.com</string>
 							</dict>
 						</dict>
 					</array>
 				</dict>
 			</dict>
 			<key>PayloadDescription</key>
-			<string></string>
+			<string>Configures Time Servers</string>
 			<key>PayloadDisplayName</key>
-			<string>Custom</string>
+			<string>NCSC Automatic Time Servers</string>
 			<key>PayloadEnabled</key>
 			<true/>
 			<key>PayloadIdentifier</key>
-			<string>7243A790-723E-4433-ABA4-629C1A99264C</string>
+			<string>4B63BB1E-0D4D-4DD2-BF93-4AAB46523179</string>
+			<key>PayloadOrganization</key>
+			<string>ennbee.uk</string>
 			<key>PayloadType</key>
 			<string>com.apple.ManagedClient.preferences</string>
 			<key>PayloadUUID</key>
-			<string>7243A790-723E-4433-ABA4-629C1A99264C</string>
+			<string>4B63BB1E-0D4D-4DD2-BF93-4AAB46523179</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
-	<string>AOSX_14_000032 - Custom payload &gt; com.apple.loginwindow &gt; DisableFDEAutoLogin=true</string>
+	<string>Configures Time Servers</string>
 	<key>PayloadDisplayName</key>
-	<string>10.14_STIG-DisableFDEAutoLogin</string>
+	<string>NCSC Automatic Time Servers</string>
 	<key>PayloadEnabled</key>
 	<true/>
 	<key>PayloadIdentifier</key>
-	<string>AF624C73-095F-4C69-89FB-A0A771D1225E</string>
+	<string>EE4E0945-5074-4EF1-A375-2B9688644D8F</string>
+	<key>PayloadOrganization</key>
+	<string>ennbee.uk</string>
 	<key>PayloadRemovalDisallowed</key>
 	<true/>
 	<key>PayloadScope</key>
@@ -52,7 +56,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>AF624C73-095F-4C69-89FB-A0A771D1225E</string>
+	<string>EE4E0945-5074-4EF1-A375-2B9688644D8F</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>

@@ -7,11 +7,11 @@
     <key>PayloadType</key>
     <string>Configuration</string>
     <key>PayloadOrganization</key>
-    <string>Company Name</string>
+    <string>ennbee.uk</string>
     <key>PayloadIdentifier</key>
     <string>0250B0DD-84C3-4DA4-91B3-6FA7824F54CD</string>
     <key>PayloadDisplayName</key>
-    <string>Apple Software Update Settings</string>
+    <string>NCSC Automatic Software Update Settings</string>
     <key>PayloadDescription</key>
     <string>Configures the macOS software update settings to enable all automatic update options.</string>
     <key>PayloadVersion</key>
@@ -30,13 +30,13 @@
         <key>PayloadType</key>
         <string>com.apple.SoftwareUpdate</string>
         <key>PayloadOrganization</key>
-        <string>Company Name</string>
+        <string>ennbee.uk</string>
         <key>PayloadIdentifier</key>
         <string>com.apple.SoftwareUpdate.A1936EA9-62CC-407B-94B0-1AD14BD513BE</string>
         <key>PayloadDisplayName</key>
-        <string>Software Update</string>
+        <string>NCSC Automatic Software Update Settings</string>
         <key>PayloadDescription</key>
-        <string/>
+        <string>Configures the macOS software update settings to enable all automatic update options.<string/>
         <key>PayloadVersion</key>
         <integer>1</integer>
         <key>PayloadEnabled</key>
