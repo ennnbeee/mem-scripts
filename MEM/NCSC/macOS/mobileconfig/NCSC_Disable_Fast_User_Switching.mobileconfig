@@ -40,7 +40,7 @@
 	<key>PayloadDescription</key>
 	<string></string>
 	<key>PayloadDisplayName</key>
-	<string>NCSC Disable Fast User Switching and Autologon<n</string>
+	<string>NCSC Disable Fast User Switching and Autologon</string>
 	<key>PayloadEnabled</key>
 	<true/>
 	<key>PayloadIdentifier</key>

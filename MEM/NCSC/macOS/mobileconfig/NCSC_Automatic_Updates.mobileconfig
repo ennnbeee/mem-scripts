@@ -56,7 +56,7 @@
         <key>AutomaticallyInstallMacOSUpdates</key>
         <true/>
         <key>CatalogURL</key>
-        <string/>
+        </string>
         <key>AllowPreReleaseInstallation</key>
         <true/>
       </dict>
