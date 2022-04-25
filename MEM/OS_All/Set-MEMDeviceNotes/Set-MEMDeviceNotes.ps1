@@ -123,20 +123,20 @@ Function Set-BulkIntuneDeviceNotes{
     )
     if(Test-Path -Path $DeviceList){
         $Devices = Import-csv $DeviceList
-        $Date = Get-Date -format "yyyy-MM-dd"
         foreach($Device in $Devices){
             # Add Date stamp to the new notes
-            $NewNotes = $Date + ': ' +$Device.Notes
+            $NewNotes = $Device.Notes
             $Notes = New-Object -TypeName System.Collections.ArrayList
             $Notes.AddRange(@(
                 $NewNotes,
+                "`n", # Adds a line break
                 "`n" # Adds a line break
             ))
             # Get existing device notes
             Try{
                 $OldNotes = Get-IntuneDeviceNotes -DeviceName $Device.Device
                 If($OldNotes -match '\d' -or $OldNotes -match '\w'){
-                    Write-Host "Existing notes found on $($Device.Device), adding to Notes variable" -ForegroundColor Cyan
+                    Write-Host "Existing notes $OldNotes found on $($Device.Device), adding to Notes variable..." -ForegroundColor Cyan
                     $Notes.AddRange(@(
                         $OldNotes
                     ))
@@ -161,12 +161,38 @@ Function Set-BulkIntuneDeviceNotes{
         }
     }
     else{
-        Write-Host "Unable to access the provided device list, please re-run the script."
+        Write-Host "Unable to access the provided device list, please check the csv file and re-run the script." -ForegroundColor red
         Break
     }
 }
 
+
+Try{
+    Write-Host "Checking for Microsoft.Graph.Intune module..." -ForegroundColor Cyan
+    $module = Get-Module -ListAvailable -Name Microsoft.Graph.Intune
+    if($null -eq $module){
+        Write-Host "Microsoft.Graph.Intune module not found, installing..." -ForegroundColor Yellow
+        Try{
+            Install-Module -Name Microsoft.Graph.Intune
+            Write-Host "Microsoft.Graph.Intune PowerShell Module installed, continuing..." -ForegroundColor Green
+        }
+        Catch{
+            Write-Host "Unable to install Microsoft.Graph.Intune PowerShell Modules" -ForegroundColor red
+            break
+        }
+    }
+    else{
+        Write-Host "Microsoft.Graph.Intune PowerShell Module installed, continuing..." -ForegroundColor Green
+    }
+
+}
+Catch{
+    Write-Host "Unable to get PowerShell Modules" -ForegroundColor red
+    break
+}
+
 Connect-MSGraph
-Set-BulkIntuneDeviceNotes -DeviceList "C:\Source\github\mem-scripts\MEM\Set-MEMDeviceNotes\devices.csv"
+
+Set-BulkIntuneDeviceNotes -DeviceList "C:\Source\github\mem-scripts\MEM\OS_All\Set-MEMDeviceNotes\devices.csv"
 
 
