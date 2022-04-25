@@ -28,7 +28,6 @@ Function Get-IntuneDeviceNotes{
         Write-Error $_.Exception.Message
         break
     }
-    #$deviceId = (Get-IntuneManagedDevice -Filter "deviceName eq 'BeesKnees'").id
     $Resource = "deviceManagement/managedDevices('$deviceId')"
     $properties = 'notes'
     $uri = "https://graph.microsoft.com/beta/$($Resource)?select=$properties"
@@ -40,7 +39,6 @@ Function Get-IntuneDeviceNotes{
         break
     }
 }
-
 Function Set-IntuneDeviceNotes{
     <#
     .SYNOPSIS
@@ -98,20 +96,77 @@ notes:"$Notes"
     }
 }
 
+Function Set-BulkIntuneDeviceNotes{
+    <#
+    .SYNOPSIS
+    Captures and sets the notes for a list of Intune devices.
+    
+    .DESCRIPTION
+    Gets and sets the notes property on a device in intune using the beta Graph api. 
+    
+    .PARAMETER Device List
+    The path to the csv file containing the names of the device that you want to get the notes field from as it appears in intune and the notes to be added.
+    i.e.    Device,Notes
+            ENB-13F278,Updated devices notes via script
+    
+    .EXAMPLE
+    Set-BulkIntuneDeviceNotes -DeviceList "C:\Temp\Devices.csv"
+    
+    .NOTES
+    You must connect to the graph api first with Connect-MSGraph.
+    #>
+    [CmdletBinding()]
+    param (
+        [Parameter(Mandatory=$true)]
+        [String]
+        $DeviceList
+    )
+    if(Test-Path -Path $DeviceList){
+        $Devices = Import-csv $DeviceList
+        $Date = Get-Date -format "yyyy-MM-dd"
+        foreach($Device in $Devices){
+            # Add Date stamp to the new notes
+            $NewNotes = $Date + ': ' +$Device.Notes
+            $Notes = New-Object -TypeName System.Collections.ArrayList
+            $Notes.AddRange(@(
+                $NewNotes,
+                "`n" # Adds a line break
+            ))
+            # Get existing device notes
+            Try{
+                $OldNotes = Get-IntuneDeviceNotes -DeviceName $Device.Device
+                If($OldNotes -match '\d' -or $OldNotes -match '\w'){
+                    Write-Host "Existing notes found on $($Device.Device), adding to Notes variable" -ForegroundColor Cyan
+                    $Notes.AddRange(@(
+                        $OldNotes
+                    ))
+                }
+                else{
+
+                }
+            }
+            Catch{
+                Write-Host "Unable to get device notes, ensure you are connected to MSGraph" -ForegroundColor Red
+                Break
+            }
+            # Add the new notes, included the old ones
+            Try{
+                Set-IntuneDeviceNotes -DeviceName $Device.Device -Notes $Notes
+                Write-Host "Notes successfully added to $($Device.Device)" -ForegroundColor Green
+            }
+            Catch{
+                Write-Host "Unable to set device notes, ensure you are connected to MSGraph" -ForegroundColor Red
+                Break
+            }
+        }
+    }
+    else{
+        Write-Host "Unable to access the provided device list, please re-run the script."
+        Break
+    }
+}
+
 Connect-MSGraph
-
-$date = Get-Date -format "dd-MM-yyyy"
-
-$Devices = Import-Csv C:\Source\github\mem-scripts\Set-MEMDeviceNotes\devices.csv
-$notes = $date + " Device missing Windows Recovery Environment (WinRE) DO NOT reset, wipe or fresh start."
-
-foreach($Device in $Devices){
-    Get-IntuneDeviceNotes -DeviceName $Device.Device
-}
-
-
-foreach($Device in $Devices){
-    Set-IntuneDeviceNotes -DeviceName $Device.Device -Notes $Notes
-}
+Set-BulkIntuneDeviceNotes -DeviceList "C:\Source\github\mem-scripts\MEM\Set-MEMDeviceNotes\devices.csv"
 
 
