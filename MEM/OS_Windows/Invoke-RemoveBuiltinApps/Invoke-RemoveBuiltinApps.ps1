@@ -48,7 +48,8 @@ Begin {
         "Microsoft.WindowsSoundRecorder", 
         "Microsoft.WindowsStore"
         "Microsoft.CompanyPortal",
-        "Microsoft.Services.Store.Engagement"
+        "Microsoft.Services.Store.Engagement",
+        "App.Support.QuickAssist~~~~0.0.1.0"
     ))
 
     # Windows 10 version 1809

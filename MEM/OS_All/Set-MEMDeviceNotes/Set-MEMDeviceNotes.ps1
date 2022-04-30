@@ -95,7 +95,6 @@ notes:"$Notes"
         }
     }
 }
-
 Function Set-BulkIntuneDeviceNotes{
     <#
     .SYNOPSIS
@@ -128,9 +127,8 @@ Function Set-BulkIntuneDeviceNotes{
             $NewNotes = $Device.Notes
             $Notes = New-Object -TypeName System.Collections.ArrayList
             $Notes.AddRange(@(
-                $NewNotes,
-                "`n", # Adds a line break
-                "`n" # Adds a line break
+                $NewNotes.trim(),
+                "`n"
             ))
             # Get existing device notes
             Try{
@@ -138,7 +136,7 @@ Function Set-BulkIntuneDeviceNotes{
                 If($OldNotes -match '\d' -or $OldNotes -match '\w'){
                     Write-Host "Existing notes $OldNotes found on $($Device.Device), adding to Notes variable..." -ForegroundColor Cyan
                     $Notes.AddRange(@(
-                        $OldNotes
+                        $OldNotes.trim()
                     ))
                 }
                 else{
@@ -166,33 +164,6 @@ Function Set-BulkIntuneDeviceNotes{
     }
 }
 
-
-Try{
-    Write-Host "Checking for Microsoft.Graph.Intune module..." -ForegroundColor Cyan
-    $module = Get-Module -ListAvailable -Name Microsoft.Graph.Intune
-    if($null -eq $module){
-        Write-Host "Microsoft.Graph.Intune module not found, installing..." -ForegroundColor Yellow
-        Try{
-            Install-Module -Name Microsoft.Graph.Intune
-            Write-Host "Microsoft.Graph.Intune PowerShell Module installed, continuing..." -ForegroundColor Green
-        }
-        Catch{
-            Write-Host "Unable to install Microsoft.Graph.Intune PowerShell Modules" -ForegroundColor red
-            break
-        }
-    }
-    else{
-        Write-Host "Microsoft.Graph.Intune PowerShell Module installed, continuing..." -ForegroundColor Green
-    }
-
-}
-Catch{
-    Write-Host "Unable to get PowerShell Modules" -ForegroundColor red
-    break
-}
-
 Connect-MSGraph
 
-Set-BulkIntuneDeviceNotes -DeviceList "C:\Source\github\mem-scripts\MEM\OS_All\Set-MEMDeviceNotes\devices.csv"
-
-
+Set-BulkIntuneDeviceNotes
