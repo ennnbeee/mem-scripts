@@ -1,10 +1,3 @@
-[CmdletBinding()]
-param(
-    [Parameter(Mandatory = $true)]
-    [ValidateSet('Windows')]
-    [string]$OS
-)
-
 function Get-AuthToken {
 
     <#
@@ -444,47 +437,45 @@ else {
 $Date = Get-Date
 $Description = "Updated Operating System Device Compliance Policy on $Date"
 
-if ($OS -eq 'Windows') {
+$Update = New-Object -TypeName psobject
+$Update | Add-Member -MemberType NoteProperty -Name '@odata.type' -Value '#microsoft.graph.windows10CompliancePolicy'
+$Update | Add-Member -MemberType NoteProperty -Name 'description' -Value $Description
 
-    $Update = New-Object -TypeName psobject
-    $Update | Add-Member -MemberType NoteProperty -Name '@odata.type' -Value '#microsoft.graph.windows10CompliancePolicy'
-    $Update | Add-Member -MemberType NoteProperty -Name 'description' -Value $Description
-
-    $OSCompliancePolicies = Get-DeviceCompliancePolicy | Where-Object { ($_.'@odata.type').contains("windows10CompliancePolicy") -and ($_.validOperatingSystemBuildRanges) -ne "" }
-    foreach ($OSCompliancePolicy in $OSCompliancePolicies) {
-        Write-Host
-        Write-Host "Updating Operating System Device Compliance Policy - $($OSCompliancePolicy.displayname)" -ForegroundColor Green
-        $OSBuilds = $OSCompliancePolicy.validOperatingSystemBuildRanges
-        $OSUpdates = @()
+$OSCompliancePolicies = Get-DeviceCompliancePolicy | Where-Object { ($_.'@odata.type').contains("windows10CompliancePolicy") -and ($_.validOperatingSystemBuildRanges) -ne "" }
+foreach ($OSCompliancePolicy in $OSCompliancePolicies) {
+    Write-Host
+    Write-Host "Updating Operating System Device Compliance Policy - $($OSCompliancePolicy.displayname)" -ForegroundColor Green
+    $OSBuilds = $OSCompliancePolicy.validOperatingSystemBuildRanges
+    $OSUpdates = @()
         
-        foreach ($OSBuild in $OSBuilds) {
-            if ($OSBuild.lowestVersion -like '*10.0.1*') {
-                $WindowsVersion = '10'
-            }
-            elseif ($OSbuild.lowestVersion -like '*10.0.2*') {
-                $WindowsVersion = '11'
-            }
-    
-            $OSVersion = $OSBuild.lowestVersion.Split('.')[2]
-            $BuildVersion = Get-LatestWindowsUpdatesBuild -OS $WindowsVersion -Build $OSVersion
-            $NewOSBuildVersion = '10.0.' + $OSVersion + '.' + $BuildVersion
-            Write-Host
-            Write-Host "Updating OS Build Minimum version to - $NewOSBuildVersion" -ForegroundColor Green
-    
-            $OSUpdate = New-Object -TypeName psobject
-            $OSUpdate | Add-Member -MemberType NoteProperty -Name 'description' -Value $OSBuild.description
-            $OSUpdate | Add-Member -MemberType NoteProperty -Name 'lowestVersion' -Value $NewOSBuildVersion
-            $OSUpdate | Add-Member -MemberType NoteProperty -Name 'highestVersion' -Value $OSBuild.highestVersion
-            $OSUpdates += $OSUpdate
-    
+    foreach ($OSBuild in $OSBuilds) {
+        if ($OSBuild.lowestVersion -like '*10.0.1*') {
+            $WindowsVersion = '10'
+        }
+        elseif ($OSbuild.lowestVersion -like '*10.0.2*') {
+            $WindowsVersion = '11'
         }
     
-        # Creating JSON object to pass to Graph
-        $Update | Add-Member -MemberType NoteProperty -Name 'validOperatingSystemBuildRanges' -Value @($OSUpdates)
-        $JSON = $Update | ConvertTo-Json -Depth 3
+        $OSVersion = $OSBuild.lowestVersion.Split('.')[2]
+        $BuildVersion = Get-LatestWindowsUpdatesBuild -OS $WindowsVersion -Build $OSVersion
+        $NewOSBuildVersion = '10.0.' + $OSVersion + '.' + $BuildVersion
+        Write-Host
+        Write-Host "Updating OS Build Minimum version to - $NewOSBuildVersion" -ForegroundColor Green
     
-        # Updating the compliance policy
-        Update-DeviceCompliancePolicy -Id $OSCompliance.id -JSON $JSON
+        $OSUpdate = New-Object -TypeName psobject
+        $OSUpdate | Add-Member -MemberType NoteProperty -Name 'description' -Value $OSBuild.description
+        $OSUpdate | Add-Member -MemberType NoteProperty -Name 'lowestVersion' -Value $NewOSBuildVersion
+        $OSUpdate | Add-Member -MemberType NoteProperty -Name 'highestVersion' -Value $OSBuild.highestVersion
+        $OSUpdates += $OSUpdate
+    
     }
+    
+    # Creating JSON object to pass to Graph
+    $Update | Add-Member -MemberType NoteProperty -Name 'validOperatingSystemBuildRanges' -Value @($OSUpdates)
+    $JSON = $Update | ConvertTo-Json -Depth 3
+    
+    # Updating the compliance policy
+    Update-DeviceCompliancePolicy -Id $OSCompliancePolicy.id -JSON $JSON
 }
+
     
