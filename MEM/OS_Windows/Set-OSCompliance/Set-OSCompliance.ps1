@@ -476,6 +476,4 @@ foreach ($OSCompliancePolicy in $OSCompliancePolicies) {
     
     # Updating the compliance policy
     Update-DeviceCompliancePolicy -Id $OSCompliancePolicy.id -JSON $JSON
-}
-
-    
+}    
