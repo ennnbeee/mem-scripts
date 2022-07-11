@@ -1,3 +1,4 @@
 Setting,Value
 SecureBoot,Enabled
 BootList,Uefi
+WakeOnLan,LanOnly
