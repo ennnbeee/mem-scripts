@@ -54,13 +54,12 @@ foreach ($NewBIOSSetting in $NewBIOSSettings) {
     foreach ($BIOSSetting in $BIOSSettings | Where-Object { $_.attribute -eq $NewItemSetting }) {
         $SettingAttribute = $BIOSSetting.attribute
         $SettingCategory = $BIOSSetting.PSChildName
-        $SettingValue = $BIOSSetting.CurrentValue
 
         If (($AdminPassSet -eq $true)) {   
             Try {
                 Set-Item -Path Dellsmbios:\$SettingCategory\$SettingAttribute -Value $NewItemValue -Password $Password
                 Write-Output "New value for $SettingAttribute is $NewItemValue"
-                New-ItemProperty -Path "$DetectionRegPath" -Name "$SettingAttribute" -Value "$NewItemValue" | Out-Null		
+                New-ItemProperty -Path "$DetectionRegPath" -Name "$SettingAttribute" -Value "$NewItemValue"  -Force | Out-Null		
             }
             Catch {
                 Write-Output "Cannot change setting $SettingAttribute (Return code $_)"  																		
@@ -69,8 +68,8 @@ foreach ($NewBIOSSetting in $NewBIOSSettings) {
         Else {
             Try {
                 Set-Item -Path Dellsmbios:\$SettingCategory\$SettingAttribute -Value $NewItemValue
-                Write-Output "New value for $Attribute is $Setting_Current_Value"
-                New-ItemProperty -Path "$DetectionRegPath" -Name "$SettingAttribute" -Value "$NewItemValue" | Out-Null	
+                Write-Output "New value for $SettingAttribute is $NewItemValue"
+                New-ItemProperty -Path "$DetectionRegPath" -Name "$SettingAttribute" -Value "$NewItemValue"  -Force | Out-Null	
             }
             Catch {
                 Write-Output"Cannot change setting $Attribute (Return code $_)"
