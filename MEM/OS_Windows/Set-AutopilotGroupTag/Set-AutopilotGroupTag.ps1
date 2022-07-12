@@ -67,7 +67,7 @@ function Get-AuthToken {
     
         if ($AadModule.count -gt 1) {
     
-            $aadModule = $AadModule | select -Unique
+            $aadModule = $AadModule | Select-Object -Unique
     
         }
     
