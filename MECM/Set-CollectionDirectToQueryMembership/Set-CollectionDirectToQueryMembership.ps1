@@ -41,6 +41,10 @@ if ($Choice_Number -eq 'E') { Break}
 if ($Choice_Number -eq '1') { $Collections = @(Get-CMDeviceCollection | Select-Object Name, CollectionID | Out-GridView -PassThru -Title "Wait for all Collections to load, then select the Device Collections you want to convert. Use The ENTER Key or Mouse \ OK Button.") }
 if ($Choice_Number -eq '2') { $Collections = Get-CMDeviceCollection }
 
+if(!$Collections) {
+    write-host "No Collections selected, please run the script again..." -ForegroundColor Red
+    Break
+}
 
 foreach ($Collection in $Collections) {
 
